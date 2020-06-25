@@ -8,6 +8,8 @@
 	<meta name="keywords" content="엘사, 안나, 크리스토프, 한스, 울라프, 스벤, 브루니">
 	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -23,6 +25,7 @@
 			<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
 			<div class="drag-text">
 				<h3>이곳에 얼굴 사진을 업로드 하세요!</h3>
+				<img src="olaf.png" align="center">
 			</div>
 		</div>
 		<div class="file-upload-content">
@@ -196,7 +199,7 @@
 					resultMessage = "브루니"
 					resultExplain = "헐~ 당신은 도마뱀?! 정말 귀여운 브루니!"
 					break;
-									case "트롤":
+				case "트롤":
 					resultMessage = "트롤"
 					resultExplain = "헐~ 당신은 트롤?! 2등신 요정!"
 					break;
@@ -207,7 +210,6 @@
 			var title = "<div class='" + prediction[0].className + "-frozen-title'>" + resultMessage + "</div>"
 			var explain = "<div class='frozen-explain pt-2'>" + resultExplain + "</div>"
 			$('.result-message').html(title + explain);
-			
 			var barWidth;
 			for (let i = 0; i < maxPredictions; i++) {
 				if (prediction[i].probability.toFixed(2) > 0.1) {

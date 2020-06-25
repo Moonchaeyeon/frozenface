@@ -115,6 +115,10 @@ h2 {
 	text-align: center;
 }
 
+img {
+    margin-bottom: 20%;
+}
+
 /* 이미지 업로드 창 */
 .file-upload {
 	width: 500px;
