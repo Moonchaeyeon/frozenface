@@ -4,56 +4,54 @@ html,
 body {
 	font-family: 'Jua', sans-serif;
 }
-/**/
- body {
-	 width: 100%;
-	 height: 100%;
-	 background: #177082;
-	 background: -moz-linear-gradient(top, #177082 0%, #52c9e0 100%);
+body {
+	width: 100%;
+	height: 100%;
+	background: #177082;
+	background: -moz-linear-gradient(top, #177082 0%, #52c9e0 100%);
 	/* FF3.6+ */
-	 background: -webkit-linear-gradient(top, #f0f9ff 0%, #52c9e0 100%);
+	background: -webkit-linear-gradient(top, #f0f9ff 0%, #52c9e0 100%);
 	/* Chrome10+,Safari5.1+ */
-	 background: -o-linear-gradient(top, #177082 0%, #52c9e0 100%);
+	background: -o-linear-gradient(top, #177082 0%, #52c9e0 100%);
 	/* Opera 11.10+ */
-	 background: -ms-linear-gradient(top, #177082 0%, #52c9e0 100%);
+	background: -ms-linear-gradient(top, #177082 0%, #52c9e0 100%);
 	/* IE10+ */
-	 background: linear-gradient(to bottom, #177082 0%, #52c9e0 100%);
+	background: linear-gradient(to bottom, #177082 0%, #52c9e0 100%);
 }
- .svg-snowscene {
-	 width: 100%;
+.svg-snowscene {
+	width: 100%;
 }
- .snow {
-	 fill: #fff;
-	 animation-name: snowing;
-	 animation-duration: 3s;
-	 animation-iteration-count: infinite;
-	 animation-timing-function: ease-out;
+.snow {
+	fill: #fff;
+	animation-name: snowing;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
 }
- .snow:nth-child(2n) {
-	 animation-delay: 1.5s;
+.snow:nth-child(2n) {
+	animation-delay: 1.5s;
 }
- .snow:nth-child(3n) {
-	 animation-delay: 2.3s;
-	 animation-duration: 3.3s;
+.snow:nth-child(3n) {
+	animation-delay: 2.3s;
+	animation-duration: 3.3s;
 }
- .snow:nth-child(4n) {
-	 animation-delay: 0.8s;
-	 animation-duration: 3.2s;
+.snow:nth-child(4n) {
+	animation-delay: 0.8s;
+	animation-duration: 3.2s;
 }
- .snow:nth-child(5n) {
-	 animation-delay: 2.8s;
+.snow:nth-child(5n) {
+	animation-delay: 2.8s;
 }
- @keyframes snowing {
-	 0% {
-		 fill-opacity: 1;
+@keyframes snowing {
+	0% {
+		fill-opacity: 1;
 	}
-	 100% {
-		 fill-opacity: 0;
-		 transform: translateY(200px);
+	100% {
+		fill-opacity: 0;
+		transform: translateY(200px);
 	}
 }
- 
-/**/
+
 p {
 	color: white;
 	text-align: center;
@@ -110,14 +108,20 @@ h1 {
 	font-family: 'frozen', serif;
 	font-weight: 700;
 }
+h2 {
+	font-weight: 100;
+	font-size: 2.5rem;
+	color: #d6ffffe8;
+	text-align: center;
+}
 
 /* 이미지 업로드 창 */
 .file-upload {
 	width: 500px;
 	margin: 10% auto;
 	padding-top: 5%;
-    padding-right: 15%;
-    padding-left: 15%;
+	padding-right: 15%;
+	padding-left: 15%;
 	padding-bottom: 10%;
 	border-radius: 10px;
 	border-style: hidden;
@@ -193,190 +197,210 @@ h1 {
 }
 
 .navbar-light .navbar-brand {
-  line-height: 1.68;
-  text-align: left;
-  color: #35465d; 
+	line-height: 1.68;
+	text-align: left;
+	color: #35465d;
 }
 
 .navbar-light .navbar-toggler {
-    border-color: #ffffff;
+	border-color: #ffffff;
 }
 
 .upload {
-    width: 20%;
+	width: 20%;
 }
 
 .upload-text {
-    width: 58%;
-    font-size: 2rem;
-    line-height: 1.53;
-    text-align: center;
-    color: #35465d;
-    margin: 0 auto;
+	width: 58%;
+	font-size: 2rem;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+	margin: 0 auto;
 }
 
 /* 막대 그래프 */
 .bar-container {
-  height: 2.7rem;
+	height: 2.7rem;
 }
 
 .엘사-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(200, 158, 196, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(200, 158, 196, 0.3);
 }
 .엘사-bar {
-  position: relative;
-  top: -2rem;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(200, 158, 196, 1);
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(200, 158, 196, 1);
 }
 .안나-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(255, 201, 82, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(255, 201, 82, 0.3);
 }
 .안나-bar {
-  position: relative;
-  top: -2rem;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(255, 201, 82, 1);
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(255, 201, 82, 1);
 }
 .크리스토프-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(170, 205, 98, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(170, 205, 98, 0.3);
 }
 .크리스토프-bar {
-  position: relative;
-  top: -2rem;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(170, 205, 98, 1);
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(170, 205, 98, 1);
 }
 .한스-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(106, 175, 230, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(106, 175, 230, 0.3);
 }
 .한스-bar {
-  position: relative;
-  top: -2rem;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(106, 175, 230, 1);
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(106, 175, 230, 1);
 }
 .울라프-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(238, 119, 133, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(238, 119, 133, 0.3);
 }
 .울라프-bar {
-  position: relative;
-  top: -2rem;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(238, 119, 133, 1);
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(238, 119, 133, 1);
 }
 .스벤-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(197, 198, 182, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(197, 198, 182, 0.3);
 }
 .스벤-bar {
-  position: relative;
-  top: -2rem;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(197, 198, 182, 0.3);
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(197, 198, 182, 0.3);
 }
 .브루니-box {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  background-color: rgba(103, 213, 181, 0.3);
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(103, 213, 181, 0.3);
 }
 .브루니-bar {
-  position: relative;
-  top: -2rem;
-  left: 0;
-  height: 2rem;
-  border-radius: 10px;
-  background-color: rgba(103, 213, 181, 1);
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(103, 213, 181, 1);
+}
+.트롤-box {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	width: 100%;
+	background-color: rgba(116, 116, 116, 0.3);
+}
+.트롤-bar {
+	position: relative;
+	top: -2rem;
+	left: 0;
+	height: 2rem;
+	border-radius: 10px;
+	background-color: rgba(116, 116, 116, 1);
 }
 .percent-text {
-  font-size: 1rem;
-  color: #ffffff;
+	font-size: 1rem;
+	color: #ffffff;
 }
 .frozen-label {
-    width: 20%;
-    text-align: left;
-    height: 2rem;
+	width: 20%;
+	text-align: left;
+	height: 2rem;
 	font-size: 1.2rem;
 }
 #label-container {
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 .result-message {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 .frozen-explain {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 .엘사-frozen-title {
-    color: #c89ec4;
+	color: #c89ec4;
 }
 .안나-frozen-title {
-    color: #ffc952;
+	color: #ffc952;
 }
 .크리스토프-frozen-title {
-    color: #aacd62;
+	color: #aacd62;
 }
 .한스-frozen-title {
-    color: #6aafe6;
+	color: #6aafe6;
 }
 .울라프-frozen-title {
-    color: #ee7785;
+	color: #ee7785;
 }
 .스벤-frozen-title {
-    color: #c5c6b6;
+	color: #c5c6b6;
 }
 .브루니-frozen-title {
-    color: #67d5b2;
+	color: #67d5b2;
+}
+.트롤-frozen-title {
+	color: #747474;
 }

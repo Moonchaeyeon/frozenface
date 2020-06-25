@@ -4,6 +4,7 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<meta charset="utf-8">
+	<title>겨울왕국 캐릭터 닮은꼴</title>
 	<meta name="keywords" content="엘사, 안나, 크리스토프, 한스, 울라프, 스벤, 브루니">
 	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
@@ -15,10 +16,13 @@
 		Frozen
 	</h1>
 	<div class="file-upload">
+		<h2>
+			나와 닮은 겨울왕국 캐릭터는?
+		</h2>
 		<div class="image-upload-wrap">
 			<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
 			<div class="drag-text">
-				<h3>얼굴 사진을 업로드 하세요</h3>
+				<h3>이곳에 얼굴 사진을 업로드 하세요!</h3>
 			</div>
 		</div>
 		<div class="file-upload-content">
@@ -174,7 +178,7 @@
 					break;
 				case "크리스토프":
 					resultMessage = "크리스토프"
-					resultExplain = "당신은 코가 큰 크리스토프!"
+					resultExplain = "당신은 코가 크고 듬직한 크리스토프!"
 					break;
 				case "한스":
 					resultMessage = "한스"
@@ -182,15 +186,19 @@
 					break;
 				case "울라프":
 					resultMessage = "울라프"
-					resultExplain = "당신은 최강 귀요미 울라프!"
+					resultExplain = "헐~ 당신은 눈사람?! 최강 귀요미 울라프!"
 					break;
 				case "스벤":
 					resultMessage = "스벤"
-					resultExplain = "당신은 순록?!"
+					resultExplain = "헐~ 당신은 순록?! 크리스토프의 영원한 친구"
 					break;
 				case "브루니":
 					resultMessage = "브루니"
-					resultExplain = "당신은 귀엽고 미간이 넓은 브루니!"
+					resultExplain = "헐~ 당신은 도마뱀?! 정말 귀여운 브루니!"
+					break;
+									case "트롤":
+					resultMessage = "트롤"
+					resultExplain = "헐~ 당신은 트롤?! 2등신 요정!"
 					break;
 				default:
 					resultMessage = "알수없음"
@@ -199,6 +207,7 @@
 			var title = "<div class='" + prediction[0].className + "-frozen-title'>" + resultMessage + "</div>"
 			var explain = "<div class='frozen-explain pt-2'>" + resultExplain + "</div>"
 			$('.result-message').html(title + explain);
+			
 			var barWidth;
 			for (let i = 0; i < maxPredictions; i++) {
 				if (prediction[i].probability.toFixed(2) > 0.1) {
@@ -230,6 +239,9 @@
 						break;
 					case "브루니":
 						labelTitle = "브루니"
+						break;
+					case "트롤":
+						labelTitle = "트롤"
 						break;
 					default:
 						labelTitle = "알수없음"
